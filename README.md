@@ -20,15 +20,15 @@ Es un proyecto en construcción. Lo voy completando a medida que aprendo, así q
 - Git y GitHub Pages, para el control de versiones y la publicación.
 
 ## 🚀 Estructura del proyecto
-/
-├── public/ Archivos estáticos (favicon, imágenes)
-├── src/
-│ ├── components/ Componentes reutilizables
-│ ├── content/ Artículos en Markdown
-│ ├── layouts/ Plantillas base de las páginas
-│ └── pages/ Páginas del sitio (index.astro, etc.)
-├── astro.config.mjs Configuración de Astro
-└── package.json Dependencias y scripts
+    /
+    ├── public/ Archivos estáticos (favicon, imágenes)
+    ├── src/
+    │ ├── components/ Componentes reutilizables
+    │ ├── content/ Artículos en Markdown
+    │ ├── layouts/ Plantillas base de las páginas
+    │ └── pages/ Páginas del sitio (index.astro, etc.)
+    ├── astro.config.mjs Configuración de Astro
+    └── package.json Dependencias y scripts
 
 
 ## 🧞 Comandos
