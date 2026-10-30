@@ -1,46 +1,48 @@
-# Astro Starter Kit: Basics
+# ORION.LAB
 
-```sh
-npm create astro@latest -- --template basics
-```
+Un espacio personal para registrar lo que voy aprendiendo sobre ciberseguridad: laboratorios, notas de Linux y redes, herramientas propias e investigaciones.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+🌐 **Sitio:** https://imdraz.github.io/orion-lab/
 
-## 🚀 Project Structure
+## 📚 Qué hay aquí
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Laboratorios:** resolución de máquinas y desafíos, con el proceso y lo que aprendí en cada uno.
+- **Investigación:** análisis, observaciones y lecturas técnicas.
+- **Herramientas:** comandos, scripts y utilidades propias.
+- **Notas técnicas:** redes, Linux, protocolos y conceptos de seguridad.
 
-```text
+Es un proyecto en construcción. Lo voy completando a medida que aprendo, así que puede haber secciones incompletas.
+
+## 🛠️ Tecnologías
+
+- [Astro](https://astro.build), para generar el sitio estático.
+- Markdown, para escribir los artículos.
+- Git y GitHub Pages, para el control de versiones y la publicación.
+
+## 🚀 Estructura del proyecto
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+├── public/ Archivos estáticos (favicon, imágenes)
+├── src/
+│ ├── components/ Componentes reutilizables
+│ ├── content/ Artículos en Markdown
+│ ├── layouts/ Plantillas base de las páginas
+│ └── pages/ Páginas del sitio (index.astro, etc.)
+├── astro.config.mjs Configuración de Astro
+└── package.json Dependencias y scripts
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🧞 Commands
+## 🧞 Comandos
 
-All commands are run from the root of the project, from a terminal:
+Todos los comandos se ejecutan desde la raíz del proyecto:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Comando                   | Acción                                                  |
+|:--------------------------|:--------------------------------------------------------|
+| `npm install`             | Instala las dependencias                                |
+| `npm run dev`             | Inicia el servidor local              |
+| `npm run build`           | Genera el sitio final en `./dist/`                      |
+| `npm run preview`         | Previsualiza la versión generada antes de publicarla    |
+| `npm run astro -- --help` | Muestra la ayuda de la CLI de Astro                     |
 
-## 👀 Want to learn more?
+## 📄 Licencia y uso
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Los contenidos son personales y de uso educativo. Los laboratorios de terceros mantienen sus propias condiciones: no publico soluciones completas de máquinas activas.
