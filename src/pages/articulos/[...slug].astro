@@ -1,0 +1,82 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles', ({ data }) => !data.draft);
+  return articles.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Layout>
+  <main class="article">
+    <a class="back" href="/#publicaciones">[ &lt; VOLVER ]</a>
+
+    <p class="meta">
+      <span>{entry.data.category}</span>
+      <span>{entry.data.pubDate.toLocaleDateString('es')}</span>
+    </p>
+
+    <h1>{entry.data.title}</h1>
+    <p class="description">{entry.data.description}</p>
+
+    <div class="content">
+      <Content />
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .article {
+    width: min(760px, 100%);
+    margin: 48px auto;
+    padding: 0 24px;
+    color: #d6e2e8;
+    font-family: "Cascadia Code", "Consolas", "Courier New", monospace;
+  }
+
+  .back {
+    color: #5eead4;
+    font-size: 11px;
+  }
+
+  .meta {
+    display: flex;
+    gap: 18px;
+    margin: 36px 0 12px;
+    color: #65818c;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  .meta span:first-child {
+    color: #5eead4;
+  }
+
+  h1 {
+    margin: 0 0 16px;
+    color: #f0fdfa;
+    font-size: clamp(28px, 5vw, 42px);
+    letter-spacing: -1px;
+    line-height: 1.1;
+  }
+
+  .description {
+    color: #91a8b2;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .content {
+    margin-top: 40px;
+    color: #b8cbd2;
+    font-size: 14px;
+    line-height: 1.9;
+  }
+</style>
