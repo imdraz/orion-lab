@@ -45,4 +45,8 @@ Todos los comandos se ejecutan desde la raíz del proyecto:
 
 ## 📄 Licencia y uso
 
-Los contenidos son personales y de uso educativo. Los laboratorios de terceros mantienen sus propias condiciones: no publico soluciones completas de máquinas activas.
+## 📄 Contenidos y uso
+
+Los contenidos son personales y de uso educativo. Cada laboratorio muestra el proceso paso a paso: reconocimiento, enumeración, explotación y lo que aprendí en el camino.
+Las flags de las máquinas no se publican. Todo el contenido se mantiene dentro de lo legal y ético: no incluye ataques contra sistemas ajenos ni herramientas dañinas fuera de laboratorios autorizados.
+Los laboratorios de terceros, mantienen sus propias condiciones de uso.
