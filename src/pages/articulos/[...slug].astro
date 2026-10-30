@@ -16,7 +16,7 @@ const { Content } = await render(entry);
 
 <Layout>
   <main class="article">
-    <a class="back" href="/#publicaciones">[ &lt; VOLVER ]</a>
+    <a class="back" href={`${import.meta.env.BASE_URL}/#publicaciones`}>[ &lt; VOLVER ]</a>
 
     <p class="meta">
       <span>{entry.data.category}</span>
