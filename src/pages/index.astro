@@ -130,10 +130,10 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft)).so
         Próximamente, nuevos artículos y recursos técnicos.
       </p>
       <div class="contact-links">
-        <a href="mailto:damianramirez749@gmail.com">[ EMAIL ] damianramirez749@gmail.com</a>
-        <a href="https://www.linkedin.com/in/drazcaballero/" target="_blank" rel="noopener">[ LINKEDIN ] in/drazcaballero</a>
-        <a href="https://www.youtube.com/@draz1006" target="_blank" rel="noopener">[ YOUTUBE ] @draz1006</a>
-        <a href="https://www.instagram.com/drazcaballero/" target="_blank" rel="noopener">[ INSTAGRAM ] drazcaballero</a>
+        <a href="mailto:damianramirez749@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>[ EMAIL ] damianramirez749@gmail.com</a>
+        <a href="https://www.linkedin.com/in/drazcaballero/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>[ LINKEDIN ] in/drazcaballero</a>
+        <a href="https://www.youtube.com/@draz1006" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>[ YOUTUBE ] @draz1006</a>
+        <a href="https://www.instagram.com/drazcaballero/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>[ INSTAGRAM ] drazcaballero</a>
       </div>
     </section>
 
@@ -451,7 +451,16 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft)).so
   }
 
   .contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: #5eead4;
+  }
+
+  .contact-links svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
   }
 
   .contact-links a:hover {
