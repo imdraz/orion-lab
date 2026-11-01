@@ -107,7 +107,7 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft)).so
             <p class="coming-soon">[ INFO ] PUBLICACIONES: EN CONSTRUCCIÓN_</p>
           ) : (
             articles.map((article) => (
-              <a class="article-link" href={`${import.meta.env.BASE_URL}/articulos/${article.id}`}>
+              {article.data.category}{article.data.pubDate ? ` · ${article.data.pubDate.toLocaleDateString('es')}` : ''}
                 <span class="article-meta">
                   {article.data.category} · {article.data.pubDate.toLocaleDateString('es')}
                 </span>
