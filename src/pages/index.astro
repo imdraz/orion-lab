@@ -65,6 +65,9 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft)).so
         registrar conocimientos técnicos. Cada publicación busca explicar
         no solo qué hacer, sino también cómo funciona y por qué importa.
       </p>
+      <p class="section-copy">
+        Soy analista de ciberseguridad. Diseño y dicto capacitaciones de concientización para equipos técnicos y no técnicos, y acompaño auditorías internas de cara a la certificación ISO 27001 e integro los requisitos del RGPD. Me formé en la Tecnicatura Superior en Ciberseguridad (ESBA, 2024-2025).
+      </p>
     </section>
 
     <section class="section" id="topics">
@@ -126,6 +129,12 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft)).so
         ORION.LAB es un proyecto personal en desarrollo.
         Próximamente, nuevos artículos y recursos técnicos.
       </p>
+      <div class="contact-links">
+        <a href="mailto:damianramirez749@gmail.com">[ EMAIL ] damianramirez749@gmail.com</a>
+        <a href="https://www.linkedin.com/in/drazcaballero/" target="_blank" rel="noopener">[ LINKEDIN ] in/drazcaballero</a>
+        <a href="https://www.youtube.com/@draz1006" target="_blank" rel="noopener">[ YOUTUBE ] @draz1006</a>
+        <a href="https://www.instagram.com/drazcaballero/" target="_blank" rel="noopener">[ INSTAGRAM ] drazcaballero</a>
+      </div>
     </section>
 
     <footer>
@@ -432,6 +441,21 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft)).so
 
   .about-panel {
     margin-bottom: 12px;
+  }
+
+  .contact-links {
+    display: grid;
+    gap: 10px;
+    margin-top: 24px;
+    font-size: 12px;
+  }
+
+  .contact-links a {
+    color: #5eead4;
+  }
+
+  .contact-links a:hover {
+    text-decoration: underline;
   }
 
   footer {
