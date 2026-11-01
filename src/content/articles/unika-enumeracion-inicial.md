@@ -1,7 +1,6 @@
 ---
 title: "Unika: enumeración inicial y acceso a la aplicación web"
 description: "Primeros pasos de reconocimiento sobre una máquina Windows con Apache y PHP: escaneo de puertos, descubrimiento de rutas y análisis de un parámetro de inclusión."
-pubDate: 2026-10
 category: "laboratorios"
 draft: false
 ---
