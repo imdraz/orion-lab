@@ -20,7 +20,7 @@ const { Content } = await render(entry);
 
     <p class="meta">
       <span>{entry.data.category}</span>
-      <span>{entry.data.pubDate.toLocaleDateString('es')}</span>
+      {entry.data.pubDate && <span>{entry.data.pubDate.toLocaleDateString('es')}</span>}
     </p>
 
     <h1>{entry.data.title}</h1>
