@@ -2,14 +2,14 @@
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 
-const categorias = {
-  laboratorios: 'Laboratorios',
-  investigacion: 'Investigación',
-  herramientas: 'Herramientas',
-  notas: 'Notas técnicas',
-};
-
 export async function getStaticPaths() {
+  const categorias = {
+    laboratorios: 'Laboratorios',
+    investigacion: 'Investigación',
+    herramientas: 'Herramientas',
+    notas: 'Notas técnicas',
+  };
+
   return Object.entries(categorias).map(([slug, titulo]) => ({
     params: { categoria: slug },
     props: { titulo },
