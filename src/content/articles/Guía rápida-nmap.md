@@ -6,7 +6,7 @@ category: "herramientas"
 draft: false
 ---
 
-Referencia de referencia para usar **solo en redes y sistemas propios o con autorización**.
+Referencia para usar **solo en redes y sistemas propios o con autorización**.
 
 ## Descubrimiento de hosts
 
