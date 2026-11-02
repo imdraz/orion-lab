@@ -2,7 +2,7 @@
 title: "Linux: permisos de archivos explicados"
 description: "Cómo leer los permisos rwx, qué significan para usuario, grupo y otros, y cómo cambiarlos con chmod y chown."
 pubDate: 2026-11-01
-category: "notes"
+category: "notas"
 draft: false
 ---
 
