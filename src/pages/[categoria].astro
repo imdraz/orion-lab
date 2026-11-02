@@ -22,24 +22,26 @@ const { titulo } = Astro.props;
 const articulos = (
   await getCollection('articles', ({ data }) => !data.draft && data.category === categoria)
 ).sort((a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0));
+
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 ---
 
 <Layout>
   <main class="terminal">
     <p class="prompt"><span>root@orion</span>:~$ ls ./{categoria}</p>
     <h1>{titulo}</h1>
-    <a class="back" href={import.meta.env.BASE_URL}>[ ← VOLVER ]</a>
+    <a class="back" href={base}>[ ← VOLVER ]</a>
 
     <div class="articles">
       {articulos.length === 0 ? (
         <p class="empty">[ INFO ] SIN PUBLICACIONES EN ESTA CATEGORÍA_</p>
       ) : (
         articulos.map((article) => (
-          <article class="article">
+          <a class="article" href={`${base}articulos/${article.id}/`}>
             <span class="meta">{article.data.pubDate?.toLocaleDateString('es') ?? ''}</span>
             <h2>{article.data.title}</h2>
             <p>{article.data.description}</p>
-          </article>
+          </a>
         ))
       )}
     </div>
@@ -104,6 +106,7 @@ const articulos = (
 
   .article,
   .empty {
+    display: block;
     padding: 22px 24px;
     border: 1px solid #263b43;
     background: rgb(12 20 26 / 70%);
