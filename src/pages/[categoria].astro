@@ -1,0 +1,47 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+
+const categorias = {
+  laboratorios: 'Laboratorios',
+  investigacion: 'Investigación',
+  herramientas: 'Herramientas',
+  notas: 'Notas técnicas',
+};
+
+export async function getStaticPaths() {
+  return Object.entries(categorias).map(([slug, titulo]) => ({
+    params: { categoria: slug },
+    props: { titulo },
+  }));
+}
+
+const { categoria } = Astro.params;
+const { titulo } = Astro.props;
+
+const articulos = (
+  await getCollection('articles', ({ data }) => !data.draft && data.category === categoria)
+).sort((a, b) => (b.data.pubDate?.valueOf() ?? 0) - (a.data.pubDate?.valueOf() ?? 0));
+---
+
+<Layout>
+  <main class="terminal">
+    <p class="prompt"><span>root@orion</span>:~$ ls ./{categoria}</p>
+    <h1>{titulo}</h1>
+    <a class="back" href={import.meta.env.BASE_URL}>[ ← VOLVER ]</a>
+
+    <div class="articles">
+      {articulos.length === 0 ? (
+        <p class="empty">[ INFO ] SIN PUBLICACIONES EN ESTA CATEGORÍA_</p>
+      ) : (
+        articulos.map((article) => (
+          <article class="article">
+            <span class="meta">{article.data.pubDate?.toLocaleDateString('es') ?? ''}</span>
+            <h2>{article.data.title}</h2>
+            <p>{article.data.description}</p>
+          </article>
+        ))
+      )}
+    </div>
+  </main>
+</Layout>
