@@ -2,7 +2,7 @@
 title: "Hackeo a Binance (octubre 2026): qué pasó y qué enseña"
 description: "Resumen del mayor robo de criptomonedas registrado: causas preliminares, atribución a Corea del Norte y lecciones de seguridad."
 pubDate: 2026-11-01
-category: "research"
+category: "investigacion"
 draft: false
 ---
 
