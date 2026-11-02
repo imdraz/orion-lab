@@ -2,7 +2,7 @@
 title: "Chuleta de Nmap: comandos esenciales"
 description: "Referencia rápida de los comandos más usados de Nmap, con qué hace cada flag y cuándo usarlo."
 pubDate: 2026-11-01
-category: "tools"
+category: "herramientas"
 draft: false
 ---
 
