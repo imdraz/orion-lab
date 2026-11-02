@@ -1,5 +1,5 @@
 ---
-title: "Laboratorio: enumeración básica de un host con Nmap"
+title: "Enumeración básica de un host con Nmap"
 description: "Práctica guiada en un laboratorio propio: descubrir hosts, puertos y servicios con Nmap, y documentar el proceso."
 pubDate: 2026-11-01
 category: "laboratorios"
