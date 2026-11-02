@@ -72,28 +72,28 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft)).so
       <h2>Explorar <span>directorios</span></h2>
 
       <div class="directory-grid">
-        <a class="directory-card" href="#contact">
+        <a class="directory-card" href={${import.meta.env.BASE_URL}laboratorios/}>
           <span class="file-icon">[01]</span>
           <h3>Laboratorios</h3>
           <p>Prácticas, desafíos y notas técnicas.</p>
           <span class="card-footer">DIRECTORY /labs</span>
         </a>
 
-        <a class="directory-card" href="#contact">
+        <a class="directory-card" href={${import.meta.env.BASE_URL}investigacion/}>
           <span class="file-icon">[02]</span>
           <h3>Investigación</h3>
           <p>Análisis, observaciones y aprendizaje.</p>
           <span class="card-footer">DIRECTORY /research</span>
         </a>
 
-        <a class="directory-card" href="#contact">
+        <a class="directory-card" href={${import.meta.env.BASE_URL}herramientas/}>
           <span class="file-icon">[03]</span>
           <h3>Herramientas</h3>
           <p>Utilidades, comandos y scripts propios.</p>
           <span class="card-footer">DIRECTORY /tools</span>
         </a>
 
-        <a class="directory-card" href="#contact">
+        <a class="directory-card" href={${import.meta.env.BASE_URL}notas/}>
           <span class="file-icon">[04]</span>
           <h3>Notas técnicas</h3>
           <p>Redes, Linux, protocolos y seguridad.</p>
