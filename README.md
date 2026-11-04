@@ -31,19 +31,6 @@ Es un proyecto en construcción. Lo voy completando a medida que aprendo, así q
     └── package.json Dependencias y scripts
 
 
-## 🧞 Comandos
-
-Todos los comandos se ejecutan desde la raíz del proyecto:
-
-| Comando                   | Acción                                                  |
-|:--------------------------|:--------------------------------------------------------|
-| `npm install`             | Instala las dependencias                                |
-| `npm run dev`             | Inicia el servidor local              |
-| `npm run build`           | Genera el sitio final en `./dist/`                      |
-| `npm run preview`         | Previsualiza la versión generada antes de publicarla    |
-| `npm run astro -- --help` | Muestra la ayuda de la CLI de Astro                     |
-
-## 📄 Licencia y uso
 
 ## 📄 Contenidos y uso
 
