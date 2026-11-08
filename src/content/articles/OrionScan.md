@@ -31,12 +31,12 @@ Código fuente: [github.com/imdraz/OrionScan](https://github.com/imdraz/OrionSca
 
 Las opciones principales son:
 
-| Opción | Función | Valor por defecto |
-|---|---|---|
-| `-host` | Equipo a revisar | IP de tu red local |
-| `-p` | Puertos: lista o rango | `1-1024` |
-| `-t` | Tiempo máximo de espera por puerto | `500ms` |
-| `-w` | Conexiones simultáneas | `500` |
+| Opción     | Función                             | Valor por defecto |
+|---         |    ---                              |      ---                |
+| `-host`    | Equipo a revisar                    | IP de tu red local |
+| `-p`       | Puertos: lista o rango              | `1-1024` |
+| `-t`       | Tiempo máximo de espera por puerto  | `500ms` |
+| `-w`       | Conexiones simultáneas              | `500` |
 
 ## Ejemplos de ejecución
 
