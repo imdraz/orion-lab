@@ -23,10 +23,10 @@ Código fuente: [github.com/imdraz/OrionScan](https://github.com/imdraz/OrionSca
 ## Uso
 
 ```powershell
-.\orionscan.exe                          # revisa tu red local, puertos 1-1024
-.\orionscan.exe -p 80                    # revisa solo el puerto 80
-.\orionscan.exe -p 22,80,443,3389,8080   # revisa una lista de puertos
-.\orionscan.exe -host 192.168.1.1 -p 1-65535 -w 1000
+.\OrionScan.exe                          # revisa tu red local, puertos 1-1024
+.\OrionScan.exe -p 80                    # revisa solo el puerto 80
+.\OrionScan.exe -p 22,80,443,3389,8080   # revisa una lista de puertos
+.\OrionScan.exe -host 192.168.1.1 -p 1-65535 -w 1000
 ```
 
 Las opciones principales son:
@@ -70,9 +70,8 @@ Un puerto que no aparece puede estar cerrado o filtrado por un firewall. OrionSc
 
 ## Uso responsable
 
-La idea es que sea ejecutado desde el equipo personal o laboral que utilices.
+OrionScan está pensado para que sea ejecutado desde el equipo personal o laboral que utilices.
 
 ## Descarga
 
 El ejecutable precompilado para Windows está disponible en la sección [Releases](https://github.com/imdraz/OrionScan/releases) del repositorio.
-
